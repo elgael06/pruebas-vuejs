@@ -12,7 +12,7 @@ export default {
   name: 'about',
   methods:{
     remove(){
-      (store.state.countStore.count > 0) && store.dispatch('countStore/remove')
+      store.dispatch('countStore/remove',10)
     }
   }
 }

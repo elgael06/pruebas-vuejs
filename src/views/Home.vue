@@ -14,7 +14,7 @@ export default {
   },
   methods:{
     increment(){
-      store.dispatch('countStore/add')
+      store.dispatch('countStore/add',12)
     }
   }
 }
