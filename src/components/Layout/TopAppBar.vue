@@ -2,20 +2,13 @@
 <template>
     <div id="nav">
       <router-link to="/">Home</router-link> |
+      <router-link to="/counter">Counter</router-link> |
       <router-link to="/about">About</router-link>
-    <p>count: {{count}} </p>
     </div>
 </template>
 
 <script>
-import store from '../../store';
-
 export default {
-    computed:{
-        count(){
-            return store.state.countStore.count;               
-        }
-    }
 }
 </script>
 
